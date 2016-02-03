@@ -1,0 +1,4 @@
+Satisfy Any
+
+RewriteEngine On
+RewriteRule ^(.+)$ index.php [L]
