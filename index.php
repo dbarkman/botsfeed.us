@@ -244,7 +244,7 @@ class BotsFeedUsAPI
 
 	private function completeRequest()
 	{
-		$serverDump = var_dump($_SERVER);
+//		$serverDump = var_dump($_SERVER);
 		$this->_time = (microtime(true) - $this->_start);
 		$this->_packageSize = strlen($this->_response);
 		$this->_size = number_format($this->_packageSize);
