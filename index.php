@@ -256,7 +256,7 @@ class BotsFeedUsAPI
 		$this->logIt('info', 'Memory Usage: ' . $this->_memoryUsage);
 		$this->logIt('info', 'API Session Ended');
 		$this->logIt('info', '--------------------------------------------------------------------------------');
-		$this->logIt('info', 'SERVER: ' . $serverDump);
+//		$this->logIt('info', 'SERVER: ' . $serverDump);
 		$this->logIt('info', '--------------------------------------------------------------------------------');
 		$this->logIt('info', '');
 
