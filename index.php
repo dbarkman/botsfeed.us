@@ -94,6 +94,7 @@ class BotsFeedUsAPI
 		$this->logIt('info', '--------------------------------------------------------------------------------');
 		$this->logIt('info', 'API Session Started');
 
+		$serverDump = var_dump($_SERVER);
 		$this->_timeStamp = (isset($_SERVER['REQUEST_TIME']) ? $_SERVER['REQUEST_TIME'] : 'NA');
 		$this->_ip = (isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : 'NA');
 		$this->_agent = (isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : 'NA');
@@ -244,7 +245,6 @@ class BotsFeedUsAPI
 
 	private function completeRequest()
 	{
-//		$serverDump = var_dump($_SERVER);
 		$this->_time = (microtime(true) - $this->_start);
 		$this->_packageSize = strlen($this->_response);
 		$this->_size = number_format($this->_packageSize);
